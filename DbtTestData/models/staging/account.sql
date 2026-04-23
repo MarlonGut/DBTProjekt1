@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('burstbank', 'account') }}

@@ -1,0 +1,17 @@
+DbtTestData:
+  outputs:
+
+    dev:
+      type: trino
+      method: ldap  # optional, one of {none | ldap | kerberos}
+      user: "marlon.gutjahr03@gmail.com/accountadmin"
+      password: "kid+2rFa2W~SVNj"  # required if method is ldap or kerberos
+      database: "sample"
+      host: "projectsetup-projectstandartdata.trino.galaxy.starburst.io"
+      port: 443
+      schema: "Burstbank"
+      threads: 1
+      cert: true
+
+
+  target: dev

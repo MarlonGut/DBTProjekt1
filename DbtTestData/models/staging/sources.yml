@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: burstbank
+    database: sample
+    schema: burstbank  
+    tables:
+      - name: account
+      - name: auto_loan_payment
+      - name: credit_card_info
+
+  
