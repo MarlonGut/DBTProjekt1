@@ -1,12 +1,10 @@
 version: 2
 
 sources:
-  - name: burstbank
-    database: sample
-    schema: burstbank  
+  - name: raw_data
+    database: predictive_maintenance
+    schema: public
     tables:
-      - name: account
-      - name: auto_loan_payment
-      - name: credit_card_info
+      - name: raw_sensor_data
 
   
