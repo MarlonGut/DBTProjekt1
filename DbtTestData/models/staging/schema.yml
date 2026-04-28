@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_sensor_reading
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+      - name: machine_failure
+        tests:
+          - not_null
+      - name: product_quality
+        tests:
+          - accepted_values:
+              values: ['L', 'M', 'H']
